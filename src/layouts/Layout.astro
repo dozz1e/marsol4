@@ -1,6 +1,7 @@
 ---
 import Menu from "../components/Menu.astro";
 import Footer from "../components/Footer.astro";
+import "@fontsource/ubuntu";
 
 interface Props {
   title: string;
@@ -46,6 +47,9 @@ const { title, description, urlSite, imageSite, keywordsSite } = Astro.props;
 </html>
 
 <style>
+  body {
+    font-family: "Ubuntu", sans-serif;
+  }
   .contenedor {
     display: grid;
     grid-template-rows: auto 1fr auto;
